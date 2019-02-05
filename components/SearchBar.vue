@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-toolbar
-                color="indigo"
+                color="indigo darken-4"
                 dark
                 tabs
         >
@@ -37,7 +37,7 @@
             >
                 <v-card>
                     <v-card-text>
-                        {{ language }}
+                        Comming soon ...
                     </v-card-text>
                 </v-card>
             </v-tab-item>

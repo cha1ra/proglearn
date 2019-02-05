@@ -1,9 +1,8 @@
 <template>
-    <v-layout>
+    <v-container>
         <h1>Codictionary</h1>
-        <h2>へへへ</h2>
         <search-bar />
-    </v-layout>
+    </v-container>
 </template>
 <script>
     import SearchBar from "~/components/SearchBar.vue"
