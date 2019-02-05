@@ -4,7 +4,7 @@
 
 <style>
 .prog-learn-logo {
-  width: 180px;
+  width: 450px;
   transform: rotateY(560deg);
   animation: turn 3.5s ease-out forwards 1s;
 }

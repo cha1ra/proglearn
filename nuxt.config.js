@@ -62,12 +62,12 @@ module.exports = {
         import: ["~assets/style/variables.styl"]
       }
     },
-    
+
     /*
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
   }
 }

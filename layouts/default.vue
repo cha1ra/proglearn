@@ -1,5 +1,6 @@
 <template>
   <v-app dark>
+    <!-- アイコンだけのメニューを生成 -->
     <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <v-list>
         <v-list-tile v-for="(item, i) in items" :key="i" :to="item.to" router exact>
@@ -12,6 +13,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
+
     <v-toolbar :clipped-left="clipped" fixed app>
       <v-toolbar-side-icon @click="drawer = !drawer"/>
       <v-btn icon @click.stop="miniVariant = !miniVariant">
@@ -19,11 +21,14 @@
       </v-btn>
       <prog-learn-logo-white/>
     </v-toolbar>
+
     <v-content>
       <v-container>
         <nuxt/>
       </v-container>
     </v-content>
+
+    <!-- 押すとにゅっと出てくるやつ -->
     <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
         <v-list-tile @click.native="right = !right">
@@ -34,6 +39,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
+
     <v-footer :fixed="fixed" app>
       <span>&copy; 2019 proglearn.com All Rights Reserved</span>
     </v-footer>
@@ -56,9 +62,14 @@ export default {
           to: "/"
         },
         {
-          icon: "bubble_chart",
-          title: "Inspire",
-          to: "/inspire"
+          icon: "library_books",
+          title: "Codictionary",
+          to: "/codictionary"
+        },
+        {
+          icon: "ondemand_video",
+          title: "Lecture",
+          to: "/lecture"
         },
         {
           icon: "bubble_chart",
